@@ -67,25 +67,13 @@
 <body>
     <div class="register-container">
         <h2>Register</h2>
-        <p>Choose account type</p>
-        <form action="" method="post">
-            <div class="radio-group" id="radio-group">
-                <label for="courier">
-                    Courier
-                    <input type="radio" id="courier" name="accountType" value="courier">
-                </label>
-
-                <label for="vendor">
-                    Vendor
-                    <input type="radio" id="vendor" name="accountType" value="vendor">
-                </label>
-
-                <label for="customer">
-                    Customer
-                    <input type="radio" id="customer" name="accountType" value="customer">
-                </label>
-            </div>
-
+        <form action="register.php" method="post">
+            <select name="account_type" id="account" class="account_type" required>
+                <option value="none" selected disabled hidden>Choose account type</option> 
+                <option value="courier">Courier</option>
+                <option value="vendor">Vendor</option>
+                <option value="customer">Customer</option>
+            </select>
             <p>Please fill out this form</p>
 
             <input type="email" placeholder="Email" id="email" name="email" required>
