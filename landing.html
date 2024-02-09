@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          Courier System
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="main-header" id="home">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.webp'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="container text-center">
+          <h1>
+            Get your product at your desired time and rate.
+          </h1>
+          <a href="/cms/index.php" class="btn btn-outline-secondary btn-lg text-white bg-success ">
+            Login
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- FEATURES -->
+
+    <section class="py-5" id="features">
+      <h1 class="strong text-center pb-5">Features</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-center border-success">
+              <h5 class="card-title"><h3>Real-time Tracking</h3></h5>
+              <div class="card-body">
+                <p>
+                  Customers can track their packages any time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center text-white bg-success">
+              <h5 class="card-title"><h3>Automated Dispatching</h3></h5>
+              <div class="card-body">
+                <p>
+                  Orders are automatically assigned to the nearest carrier.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center border-success">
+              <h5 class="card-title"><h3>Route Optimization</h3></h5>
+              <div class="card-body">
+                <p>
+                  Optimizes delivery routes for faster and cost-effective deliveries.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center text-white bg-success">
+              <h5 class="card-title"><h3>Customer Portal</h3></h5>
+              
+              <div class="card-body">
+                <p>
+                  Allows customers to place orders, schedule pickups and view order history.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="m5 text-center bg-light" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="m-5">
+            <h3>Why use a CMS?</h3>
+            <p>
+              It improves efficiency, streamlines processes and enhances customer experiences. It also helps on automating tasks, provides real-time tracking wich improves delivery accuracy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section class="container text-center p-5" id="faq">
+      <h1 class="strong text-center mb-5">Frequently asked Questions</h1>
+      <div class="row accordion">
+        <div class="accordion" id="accordionExample">
+          <div class="card2">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-success" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How to use CMS
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Click login and head on to the Dashboard page and enter your details to log in and find and manage the products and the carriers.
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How to create an account
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                On the login page you should see a link tha will direct you to the redistering page. Choose your account type and fill in your details then login.
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How to track
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                On the dashboard, ckick the track parcel linl and input your tracking number to see the status of your parcel.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="bg-light p-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h3>Contact</h3>
+            <p>
+              Send us a complaint or inquiry.
+            </p>
+            <form action="">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-user input-group-text"></i>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-envelope input-group-text"></i>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-pencil-alt input-group-text"></i>
+                </div>
+                <textarea name="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-block bg-success text-white">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-success">
+      <div class="container p-3">
+        <div class="row text-center text-white">
+          <div class="col ml-auto">
+            <p>Copyright &copy; 2023</p>
+          </div>
+        </div>
+      </div>       
+    </footer>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
